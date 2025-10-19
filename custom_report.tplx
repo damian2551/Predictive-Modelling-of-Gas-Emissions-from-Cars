@@ -1,0 +1,37 @@
+((* extends 'latex/index.tex.j2' *))
+
+((* block docclass *))
+\documentclass[11pt,a4paper]{scrartcl}
+((* endblock docclass *))
+
+((* block preamble *))
+\usepackage[affil-it]{authblk}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{pgfgantt}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\geometry{a4paper, margin=1in}
+\graphicspath{{.}}
+((* endblock preamble *))
+
+((* block maketitle *))
+\title{%
+  \includegraphics[height=5cm,width=0.8\textwidth]{westernsydney_logo.PNG}\\[1cm]
+  Project Report
+}
+\author{%
+  Student 1 Chi Hao Lu (19909400)\\
+  Student 2 Damian Nguyen (22049939)\\
+  Student 3 Qian Heng Yau (22028269)\\[0.3cm]
+  \textit{Assignment 2 for COMP7023 Predictive Analytics}\\
+  \textit{School of Computer, Data and Mathematical Sciences}\\
+  \textit{Western Sydney University}
+}
+\date{Spring 2025}
+\maketitle
+((* endblock maketitle *))
